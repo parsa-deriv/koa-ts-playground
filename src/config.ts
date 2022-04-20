@@ -1,3 +1,7 @@
+export interface IConfig {
+    port: string
+}
+
 export const config = {
-    port: process.env.PORT || 7654
+    port: process.env.PORT || "7654"
 }

@@ -23,3 +23,5 @@ const server = app.listen(PORT, async () => {
 }).on("error", err => {
     console.log(err);
 });
+
+export default server;

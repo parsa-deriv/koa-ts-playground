@@ -39,6 +39,31 @@
     "supertest": "^6.2.2",
     "ts-jest": "^27.1.4",
     "ts-node-dev": "^1.1.8"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "modulePathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "roots": [
+      "<rootDir>/__tests__"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
-  
 }
